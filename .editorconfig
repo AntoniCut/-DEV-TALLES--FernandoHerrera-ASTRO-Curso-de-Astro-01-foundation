@@ -1,0 +1,18 @@
+# indent_style = tab
+# end_of_line = lf
+# insert_final_newline = true
+# tab_width = 4
+# charset = utf-8
+# trim_trailing_whitespace = true
+
+
+
+# Estilo general de indentación
+[*]
+indent_style = space
+indent_size = 4
+
+# Configuración específica para archivos .astro
+[*.astro]
+indent_style = space
+indent_size = 4

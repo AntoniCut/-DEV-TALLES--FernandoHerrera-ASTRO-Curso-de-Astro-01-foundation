@@ -1,0 +1,34 @@
+---
+import CustomTitle from "../components/CustomTitle.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<!--  ************************************************************  -->
+<!--  **********  /01-foundation/src/pages/about.astro  **********  -->
+<!--  ************************************************************  -->
+
+
+<MainLayout title="About Page">
+    
+    <h1>About</h1>
+
+    <h2> Soy un H2 </h2>
+
+    <CustomTitle title="Soy un Título" />
+
+</MainLayout>
+
+
+<!-- -----  is:global  --  aplica el estilo global al archivo .astro  ----- -->
+<style is:global>
+    h1 {
+        color: red;
+    }
+</style>
+
+
+<style is:inline>
+    h2 {
+        color: green;
+    }
+</style>

@@ -1,0 +1,46 @@
+---
+
+import { ViewTransitions } from "astro:transitions";
+import NavBar from "../components/NavBar.astro";
+import "../styles/global.css";
+
+interface Props {
+    title: string;
+    age?: number;
+    isActive?: boolean
+}
+
+const { title, age, isActive } = Astro.props;
+
+---
+
+
+<!--  ********************************************************************  -->
+<!--  **********  /01-foundation/src/layouts/MainLayouts.astro  **********  -->
+<!--  ********************************************************************  -->
+
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title> { title } </title>
+        <ViewTransitions />
+    </head>
+
+    <body>
+
+        <main>
+
+            <NavBar />
+            <br> <br> <br>
+            <slot />
+            
+        </main>
+         
+    </body>
+
+</html>
